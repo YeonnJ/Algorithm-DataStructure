@@ -5,3 +5,12 @@ function solution(n) {
 }
 
 console.log(solution(10));
+
+//선생님답변
+function solution(n) {
+  let answer = 0;
+  for (let i = 0; i <= n; i++) {
+    answer += answer + i;
+  }
+  return answer;
+}
