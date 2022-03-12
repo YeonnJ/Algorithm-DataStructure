@@ -11,5 +11,5 @@
 // }
 
 function solution(numbers) {
-  return 45 - numbers.reduce((cur, acc) => cur + acc, 0);
+  return 45 - numbers.reduce((acc, cur) => acc + cur, 0);
 }
