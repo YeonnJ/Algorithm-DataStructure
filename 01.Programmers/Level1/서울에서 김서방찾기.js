@@ -8,3 +8,9 @@ function solution(seoul) {
   }
   return answer;
 }
+
+function solution(seoul) {
+  const kimLocation = seoul.findIndex((el) => el === "Kim");
+
+  return `김서방은 ${kimLocation}에 있다`;
+}

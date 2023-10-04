@@ -9,3 +9,10 @@ function solution(arr) {
   }
   return arr;
 }
+
+function solution(arr) {
+  const removeIdx = arr.findIndex((el) => el === Math.min(...arr));
+
+  arr.splice(removeIdx, 1);
+  return arr.length > 1 ? arr : [-1];
+}

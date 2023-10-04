@@ -13,5 +13,21 @@ function solution(d, budget) {
     else break;
   }
 
-  return answer;
+  return an;
+}
+
+function solution(d, budget) {
+  const sortBudget = d.sort((a, b) => a - b);
+  let cnt = 0;
+
+  for (const count of sortBudget) {
+    if (budget - count >= 0) {
+      budget = budget - count;
+      cnt++;
+    } else {
+      return cnt;
+    }
+  }
+
+  return cnt;
 }

@@ -31,3 +31,4 @@ function solution(n, m) {
 
   return answer;
 }
+
